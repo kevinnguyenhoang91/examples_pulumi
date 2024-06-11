@@ -27,4 +27,8 @@ RUN echo \
     && ${dir_clean} \
     && ${TEST} \
     && echo
+
+# Install the gke-gcloud-auth-plugin
+RUN gcloud components install gke-gcloud-auth-plugin
+
 USER vscode
