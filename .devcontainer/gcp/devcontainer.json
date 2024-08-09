@@ -8,16 +8,26 @@
   "overrideCommand": false,
   "updateRemoteUserUID": true,
   "shutdownAction": "stopContainer",
-  "securityOpt": ["seccomp=unconfined"],
+  "securityOpt": [
+    "seccomp=unconfined"
+  ],
   "features": {
     "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {}
   },
-  "mounts": ["source=dind-var-lib-docker,target=/var/lib/docker,type=volume"],
+  "mounts": [
+    "source=dind-var-lib-docker,target=/var/lib/docker,type=volume"
+  ],
   "postCreateCommand": "devcontainer-links",
   //"workspaceFolder": "/workspaces/devcontainer",
   //"workspaceMount": "source=.,target=/home/vscode/devcontainer,type=bind,consistency=cached",
   //"workspaceFolder": "/home/vscode/devcontainer",
-  "forwardPorts": [1313, 2222, 6000, 7681, 8080],
+  "forwardPorts": [
+    1313,
+    2222,
+    6000,
+    7681,
+    8080
+  ],
   "customizations": {
     "vscode": {
       "settings": {
@@ -50,8 +60,13 @@
           },
           "insertModeKeyBindings": [
             {
-              "before": ["j", "j"],
-              "after": ["<esc>"]
+              "before": [
+                "j",
+                "j"
+              ],
+              "after": [
+                "<esc>"
+              ]
             }
           ],
           "handleKeys": {
@@ -149,7 +164,10 @@
           "ignoreLegacyWarning": true,
           "autoRepositoryDetection": "openEditors",
           "defaultCloneParentDirectory": "/home/vscode",
-          "scanRepositories": ["/home/vscode", "/workspaces"],
+          "scanRepositories": [
+            "/home/vscode",
+            "/workspaces"
+          ],
           "path": "/usr/local/bin/git"
         },
         "github.copilot": {
@@ -170,7 +188,9 @@
           "testEnvVars": {
             "GOFLAGS": "-count=1"
           },
-          "generateTestsFlags": ["-count=1"]
+          "generateTestsFlags": [
+            "-count=1"
+          ]
         },
         "terminal": {
           "integrated": {
@@ -236,7 +256,7 @@
           ]
         },
         "workbench": {
-          "colorTheme": "Cyberpunk",
+          "colorTheme": "Copilot",
           "startupEditor": "readme",
           "action.terminal.focusNext": {
             "key": "ctrl+shift+down",
@@ -302,7 +322,7 @@
         "golang.go",
         "vscodevim.vim",
         "github.copilot",
-        "max-ss.cyberpunk",
+        "benjaminbenais.copilot-theme",
         "ms-python.python",
         "redhat.vscode-yaml",
         "esbenp.prettier-vscode",
